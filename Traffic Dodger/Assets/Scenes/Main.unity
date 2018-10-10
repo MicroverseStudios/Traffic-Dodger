@@ -1401,7 +1401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af221ffa70240084a87e8ffcd83bc6dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherCar: {fileID: 1886719459186874, guid: 47f3cd8decc06794582523a5839bab4b, type: 2}
+  enemyCar: {fileID: 1886719459186874, guid: 47f3cd8decc06794582523a5839bab4b, type: 2}
   levelText: {fileID: 656255476}
   CDText: {fileID: 1814613126}
   ESText: {fileID: 153450958}
