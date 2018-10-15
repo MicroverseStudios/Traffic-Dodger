@@ -1,16 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
     public Vector3 newPos; //position the car will move to
     public static bool dead; //indicates if the player has died
+    public bool LBut;
+    public bool RBut;
+    private bool boost;
     void Start () {
         //sets starting position
         newPos = transform.position;
-
+        boost = false;
         dead = false;
 	}
+
+    private void Update()
+    {
+        
+    }
 
     private void FixedUpdate()
     {
@@ -21,6 +30,7 @@ public class PlayerController : MonoBehaviour {
         //moves car to appropriate lane
         transform.position = Vector3.MoveTowards(transform.position, newPos, Time.deltaTime * 10);
     }
+
     //moves car left by one lane
     public void MoveLeft()
     {
